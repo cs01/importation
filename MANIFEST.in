@@ -1,0 +1,10 @@
+graft src
+include *.md LICENSE
+
+exclude CHANGELOG.md
+exclude noxfile.py
+prune tests
+
+global-exclude *.py[cod]
+global-exclude __pycache__
+global-exclude .*.swp
