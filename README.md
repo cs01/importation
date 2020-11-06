@@ -39,6 +39,18 @@ $ python test.py
 # module resolved at /home/__pypackages__/importation/lib/python3.8/site-packages/httpx/__init__.py
 ```
 
+Another example with an interactive terminal:
+```
+>>> import httpx
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'httpx'
+>>> import importation
+>>> import httpx
+>>> print(httpx)
+<module 'httpx' from '/home/importation/__pypackages__/importation/lib/python3.8/site-packages/httpx/__init__.py'>
+```
+
 To debug or view details of what it's doing set the `IMPORTATION_VERBOSE` environment variable:
 ```
 $ IMPORTATION_VERBOSE=1 python test.py
